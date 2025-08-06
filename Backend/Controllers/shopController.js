@@ -1,4 +1,4 @@
-const Shop = require('../Models/shopModel');
+const Shop = require('../Models/Shop');
 
 const createShop = async (req, res) => {
   try {
