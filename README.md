@@ -32,3 +32,9 @@ backend/
 │   ├── authMiddleware.js
 │   └── roleMiddleware.js
 ├── index.js
+
+#Summary of Model Relationships
+
+*User* belongs to a shop
+*Product* belongs to a shop
+*Order* belongs to a Shop and a User(Cashier)
