@@ -33,8 +33,9 @@ backend/
 │   └── roleMiddleware.js
 ├── index.js
 
-#Summary of Model Relationships
+# Summary of Model Relationships
 
-*User* belongs to a shop
-*Product* belongs to a shop
-*Order* belongs to a Shop and a User(Cashier)
+- *User* belongs to a shop
+- *Product* belongs to a shop
+- *Order* belongs to a Shop and a User(Cashier)
+- All data is scoped by shopId to ensure multi-tenancy
