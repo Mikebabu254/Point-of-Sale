@@ -1,6 +1,6 @@
 const User = require('../Models/User');
 const Shop = require('../Models/Shop');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key';
@@ -44,7 +44,7 @@ const loginUser = async (req, res) => {
             return res.status(404).json({ message: 'User not found' });
         }
 
-        const token = jwt.sign({ userId: user._id, role: user.role, user.shop._id }, JWT_SECRET, { expiresIn: '8h' });
+        const token = jwt.sign({ userId: user._id, role: user.role, shopId: user.shop._id }, JWT_SECRET, { expiresIn: '8h' });
         res.status(200).json({ token, user: { id:user._id, username: user.username, role: user.role, shop: user.shop.name } });
     } catch (error) {
         console.error('Error logging in user:', error);
