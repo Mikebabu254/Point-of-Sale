@@ -39,3 +39,26 @@ backend/
 - *Product* belongs to a shop
 - *Order* belongs to a *Shop* and a *User*(Cashier)
 - All data is scoped by shopId to ensure multi-tenancy
+
+# FRONTEND
+
+frontend/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── hooks/
+│   ├── context/
+│   ├── pages/
+│   │   ├── admin/
+│   │   ├── owner/
+│   │   ├── cashier/
+│   │   ├── auth/
+│   ├── routes/
+│   ├── services/
+│   ├── utils/
+│   ├── App.js
+│   ├── main.js
+├── .env
+├── package.json
+
