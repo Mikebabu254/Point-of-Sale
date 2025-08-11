@@ -1,9 +1,9 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
-import Login from './routes/pages/auth/Login'
-// import AdminDashboard from './routes/pages/admin/Dashboard'
-// import OwnerDashboard from './pages/owner/Dashboard'
-// import POS from './pages/cashier/POS'
-// import ProtectedRoute from './routes/ProtectedRoute'
+import Login from './routes/pages/auth/Login.jsx'
+import AdminDashboard from './routes/pages/admin/Dashboard'
+import OwnerDashboard from './routes/pages/owner/Dashboard'
+import POS from './routes/pages/cashier/POS'
+import ProtectedRoute from './routes/ProtectedRoute'
 
 function App() {
   return (
