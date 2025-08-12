@@ -11,27 +11,28 @@ Currently, two official plugins are available:
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
+## 📁 BACKEND STRUCTURE
 <pre>
   backend/
-├── controllers/
-│   ├── authController.js
-│   ├── shopController.js
-│   ├── productController.js
-│   └── orderController.js
-├── models/
-│   ├── Shop.js
-│   ├── User.js
-│   ├── Product.js
-│   └── Order.js
-├── routes/
-│   ├── authRoutes.js
-│   ├── shopRoutes.js
-│   ├── productRoutes.js
-│   └── orderRoutes.js
-├── middleware/
-│   ├── authMiddleware.js
-│   └── roleMiddleware.js
-├── index.js
+    ├── controllers/
+    │   ├── authController.js
+    │   ├── shopController.js
+    │   ├── productController.js
+    │   └── orderController.js
+    ├── models/
+    │   ├── Shop.js
+    │   ├── User.js
+    │   ├── Product.js
+    │   └── Order.js
+    ├── routes/
+    │   ├── authRoutes.js
+    │   ├── shopRoutes.js
+    │   ├── productRoutes.js
+    │   └── orderRoutes.js
+    ├── middleware/
+    │   ├── authMiddleware.js
+    │   └── roleMiddleware.js
+    ├── index.js
 </pre>
 
 
@@ -43,27 +44,27 @@ If you are developing a production application, we recommend using TypeScript wi
 - All data is scoped by shopId to ensure multi-tenancy
 - Admin can oversee everything
 
-# FRONTEND
+## 📁FRONTEND
 <pre>
   frontend/
-├── public/
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── hooks/
-│   ├── context/
-│   ├── pages/
-│   │   ├── admin/
-│   │   ├── owner/
-│   │   ├── cashier/
-│   │   ├── auth/
-│   ├── routes/
-│   ├── services/
-│   ├── utils/
-│   ├── App.js
-│   ├── main.js
-├── .env
-├── package.json
+    ├── public/
+    ├── src/
+    │   ├── assets/
+    │   ├── components/
+    │   ├── hooks/
+    │   ├── context/
+    │   ├── pages/
+    │   │   ├── admin/
+    │   │   ├── owner/
+    │   │   ├── cashier/
+    │   │   ├── auth/
+    │   ├── routes/
+    │   ├── services/
+    │   ├── utils/
+    │   ├── App.js
+    │   ├── main.js
+    ├── .env
+    ├── package.json
 
 </pre>
 
