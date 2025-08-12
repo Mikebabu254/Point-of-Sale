@@ -14,24 +14,26 @@ If you are developing a production application, we recommend using TypeScript wi
 ## 📁 BACKEND STRUCTURE
 <pre>
   backend/
-    ├── controllers/
+    ├── Controllers/
     │   ├── authController.js
     │   ├── shopController.js
     │   ├── productController.js
     │   └── orderController.js
-    ├── models/
+    ├── Models/
     │   ├── Shop.js
     │   ├── User.js
     │   ├── Product.js
     │   └── Order.js
-    ├── routes/
+    ├── Routes/
     │   ├── authRoutes.js
     │   ├── shopRoutes.js
     │   ├── productRoutes.js
     │   └── orderRoutes.js
-    ├── middleware/
+    ├── Middleware/
     │   ├── authMiddleware.js
     │   └── roleMiddleware.js
+    ├── .env
+    ├── .gitignore
     ├── index.js
 </pre>
 
@@ -50,16 +52,13 @@ If you are developing a production application, we recommend using TypeScript wi
     ├── public/
     ├── src/
     │   ├── assets/
-    │   ├── components/
-    │   ├── hooks/
     │   ├── context/
-    │   ├── pages/
+    │   ├── routes/
     │   │   ├── admin/
     │   │   ├── owner/
     │   │   ├── cashier/
     │   │   ├── auth/
-    │   ├── routes/
-    │   ├── services/
+    │   ├── services
     │   ├── utils/
     │   ├── App.js
     │   ├── main.js
