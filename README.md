@@ -44,8 +44,8 @@ If you are developing a production application, we recommend using TypeScript wi
 - Admin can oversee everything
 
 # FRONTEND
-
-frontend/
+<pre>
+  frontend/
 ├── public/
 ├── src/
 │   ├── assets/
@@ -64,5 +64,7 @@ frontend/
 │   ├── main.js
 ├── .env
 ├── package.json
+
+</pre>
 
 
