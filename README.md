@@ -28,14 +28,6 @@
     ├── index.js
 </pre>
 
-
-# Summary of Model Relationships
-- *User* belongs to a shop
-- *Product* belongs to a shop
-- *Order* belongs to a *Shop* and a *User*(Cashier)
-- All data is scoped by shopId to ensure multi-tenancy
-- Admin can oversee everything
-
 ## 📁FRONTEND
 <pre>
   frontend/
@@ -54,7 +46,13 @@
     │   ├── main.js
     ├── .env
     ├── package.json
-
 </pre>
+
+# Summary of Model Relationships
+- *User* belongs to a shop
+- *Product* belongs to a shop
+- *Order* belongs to a *Shop* and a *User*(Cashier)
+- All data is scoped by shopId to ensure multi-tenancy
+- Admin can oversee everything
 
 
