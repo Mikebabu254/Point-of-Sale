@@ -29,7 +29,7 @@
 </pre>
 
 ## 📁FRONTEND
-<pre>
+<!-- <pre>
   frontend/
     ├── public/
     ├── src/
@@ -46,7 +46,35 @@
     │   ├── main.js
     ├── .env
     ├── package.json
+</pre> -->
+<pre>
+  frontend/
+  ├── public/
+  │   └── favicon.ico
+  ├── src/
+  │   ├── components/
+  │   │   ├── Navbar.jsx
+  │   │   ├── Sidebar.jsx
+  │   │   ├── ProductCard.jsx
+  │   │   └── OrderSummary.jsx
+  │   ├── pages/
+  │   │   ├── Login.jsx
+  │   │   ├── Dashboard.jsx
+  │   │   ├── Products.jsx
+  │   │   ├── Orders.jsx
+  │   │   └── Settings.jsx
+  │   ├── services/
+  │   │   ├── api.js      # Axios instance for API calls
+  │   │   └── auth.js     # Auth-related API functions
+  │   ├── App.jsx
+  │   ├── main.jsx
+  │   ├── App.css
+  │   └── index.css
+  ├── .env
+  ├── package.json
+  └── vite.config.js
 </pre>
+
 
 # Summary of Model Relationships
 - *User* belongs to a shop
